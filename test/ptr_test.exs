@@ -1,8 +1,7 @@
 defmodule PtrTest do
   use ExUnit.Case
-  doctest Ptr
 
-  test "greets the world" do
-    assert Ptr.hello() == :world
+  test "outputs Hello PTR" do
+    assert Ptr.hello() == "Hello PTR"
   end
 end

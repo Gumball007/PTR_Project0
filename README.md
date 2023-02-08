@@ -5,7 +5,7 @@
 
 :trollface:  This repository contains laboratory works for **PTR**.
 
-:exclamation:  Teacher [**Gavrilița Mihai**](https://github.com/alexeisersun).
+:exclamation:  Teacher **Gavrilița Mihai**.
 
 ## Labs
 

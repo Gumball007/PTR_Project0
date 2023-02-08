@@ -24,7 +24,6 @@ defmodule Ptr do
 end
 
 IO.puts(Ptr.hello)
-
 ```
 
 **Main Task** Initialize a VCS repository for your project. Push your project to a remote repo.
@@ -43,7 +42,6 @@ defmodule PtrTest do
     assert Ptr.hello() == "Hello PTR"
   end
 end
-
 ```
 
 The output :

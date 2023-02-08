@@ -9,7 +9,7 @@
 
 ## Labs
 
-[:construction: Project 0](https://github.com/Gumball007/PTR-labs/tree/main/project0)
+[:construction: Project 0](https://github.com/Gumball007/ptr/tree/main/lib/project0)
 
 ## Contact
 

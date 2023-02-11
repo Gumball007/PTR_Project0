@@ -106,4 +106,21 @@ defmodule Project0.Week2.Tasks do
   def removeConsecutiveDuplicates(list) do
     Enum.dedup(list)
   end
+
+  def encodeCaesar(text, shift) do
+    String.to_charlist(text)
+    |> Enum.map( fn char -> char < 97 || 97 + rem( char - 71 + shift, 26 ) end )
+    |> to_string()
+  end
+
+  def decodeCaesar(text, shift) do
+    String.to_charlist(text)
+    |> Enum.map( fn char -> char < 97 || 97 + rem( char - 71 - shift, 26 ) end )
+    |> to_string()
+  end
 end
+
+dict = %{ mama: "mother",
+papa: "father"
+}
+IO.inspect(Project0.Week2.Tasks.translator(dict, "mama is with papa"))

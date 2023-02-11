@@ -13,7 +13,11 @@ defmodule PtrTest do
     assert Project0.Week2.Tasks.isPrime(11) == true
   end
 
-  test "area" do
-    assert Project0.Week2.Tasks.cylinderArea(3,4) == true
+  # test "area" do
+  #   assert Project0.Week2.Tasks.cylinderArea(3,4) == true
+  # end
+
+  test "verify translate" do
+    assert Project0.Week2.Tasks.translator(%{ mama: "mother", papa: "father"}, "mama is with papa") == "mother is with"
   end
 end

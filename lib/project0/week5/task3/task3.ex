@@ -1,4 +1,4 @@
-defmodule Project0.Week5.Task2 do
+defmodule Project0.Week5.Task3 do
 
     HTTPoison.start()
   
@@ -22,7 +22,7 @@ defmodule Project0.Week5.Task2 do
       |> Floki.find("meta.keywords")
       |> Floki.attribute("content")
       
-       Enum.zip([quotes, authors, tags])
+       quotes_data = Enum.zip([quotes, authors, tags])
        |> Enum.map(fn {quotes, author, tags} ->
         %{
             quote: quotes,
@@ -30,8 +30,12 @@ defmodule Project0.Week5.Task2 do
             tags: tags
         }
         end)
-        |> IO.inspect
 
+        json_data = Jason.encode!(quotes_data)
+
+        File.write("/Users/ana/ptr/lib/project0/week5/task3/quotes.json", json_data)
+
+        quotes_data
     end
 
     def run() do
@@ -40,4 +44,4 @@ defmodule Project0.Week5.Task2 do
     end
 end
 
-Project0.Week5.Task2.get_quotes()
+Project0.Week5.Task3.get_quotes()
